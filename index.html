@@ -11,6 +11,8 @@
             --bulma-primary-h: 26deg;
             --bulma-primary-s: 14%;
             --bulma-primary-l: 55%;
+            --bulma-link-h: 244deg;
+            --bulma-link-l: 68%;
             --bulma-success-h: 113deg;
             --bulma-success-s: 100%;
             --bulma-success-l: 32%;
@@ -18,42 +20,90 @@
             --bulma-danger-l: 66%;
             --bulma-scheme-h: 32;
             --bulma-scheme-s: 25%;
-            --bulma-family-primary: visionregular, Arial, Helvetica, sans-serif;
+            --bulma-family-primary: Arial, Helvetica, sans-serif;
             --bulma-family-secondary: visionregular, Arial, Helvetica, sans-serif;
             --bulma-family-code: "Fira Code", "JetBrains Mono", "Cascadia Code", "IBM Plex Mono", "Source Code Pro", "SF Mono", "Ubuntu Mono", Inconsolata, Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
         }
     </style>
+    <link href="./fas/css/fontawesome.css" rel="stylesheet" />
+    <link href="./fas/css/brands.css" rel="stylesheet" />
+    <link href="./fas/css/solid.css" rel="stylesheet" />
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        });
+    </script>
 </head>
 <body>
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="#">&lt;CG/&gt;</a>
+            <a class="navbar-item" href="#">&lt;cg/&gt;</a>
+            <a role="button" class="navbar-burger is-primary" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>              
         </div>
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="#top">Top</a>
-                <a class="navbar-item" href="#about">About</a>
-                <a class="navbar-item" href="#contact">Contact</a>
-                <a class="navbar-item" href="#skills">Skills</a>
-            </div>
+        <div class="navbar-menu" id="navMenu">
+            <a class="navbar-item" href="#top">Top</a>
+            <a class="navbar-item" href="#about">About</a>
+            <a class="navbar-item" href="#contact">Contact</a>
+            <a class="navbar-item" href="#skills">Skills</a>
         </div>
     </nav>
 
-    <section class="section has-text-centered">
-        <h1 class="title">What do you want to make?</h1>
-        <div class="buttons is-centered">
-            <button class="button is-danger">Digital Media</button>
-            <button class="button is-primary">Games</button>
-            <button class="button is-primary">Software</button>
-            <button class="button is-info">Web</button>
+    <section class="section hero is-black has-text-centered">
+        <div class="hero-body">
+            <h1 class="title is-1 is-family-secondary has-text-weight-normal">What do you want to make?</h1>
+            <div class="buttons is-centered">
+                <button class="button is-warning is-outlined is-inline-flex is-align-items-center">
+                    <span class="icon">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </span>
+                    <span>Digital Media</span>             
+                </button>
+                <button class="button is-white is-outlined is-inline-flex is-align-items-center">
+                    <span class="icon">
+                        <i class="fa-brands fa-steam"></i>
+                    </span>
+                    <span>Games</span>
+                </button>
+                <button class="button is-primary is-outlined is-inline-flex is-align-items-center">
+                    <span class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </span>
+                    <span>Software</span>
+                </button>
+                <button class="button is-link is-outlined is-inline-flex is-align-items-center">
+                    <span class="icon">
+                        <i class="fa-solid fa-wifi"></i>
+                    </span>
+                    <span>Web</span>
+                </button>
+            </div>
         </div>
     </section>
 
     <section id="about" class="section has-text-centered">
         <div class="columns">
             <div class="column is-one-third m-auto">
-                <h2 class="title"><code class="markdown"># About</code></h2>
-                <blockquote><code class="markdown"> > A quote or something</code></blockquote>
+                <h2 class="title is-1"><code class="has-text-link"># About</code></h2>
+                <h3 class="title is-2"><code class="has-text-success"> > A quote or something</code></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel urna auctor, sagittis eros nec, dapibus turpis.</p>
             </div>
         </div>
     </section>
