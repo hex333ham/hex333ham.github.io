@@ -60,10 +60,11 @@
     </script>
 </head>
 <body class="has-navbar-fixed-top">
-    <nav class="navbar is-fixed-top has-background-primary-dark" role="navigation" aria-label="main navigation">
+    <a id="top"></a>
+    <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main dropdown navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="#">&lt;cg/&gt;</a>
-            <a role="button" class="navbar-burger is-primary" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <a class="navbar-item" href="#top">&lt;cg/&gt;</a>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -71,10 +72,25 @@
             </a>              
         </div>
         <div class="navbar-menu" id="navMenu">
-            <a class="navbar-item" href="#top">Top</a>
-            <a class="navbar-item" href="#about">About</a>
+            <a class="navbar-item" href="#about">About Me</a>
             <a class="navbar-item" href="#contact">Contact</a>
-            <a class="navbar-item" href="#skills">Skills</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="#skills">Skills</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="#web">
+                    Web &amp; Apps
+                  </a>
+                  <a class="navbar-item" href="#software">
+                    Software Engineering
+                  </a>
+                  <a class="navbar-item" href="#media">
+                    Media Production
+                  </a>
+                  <a class="navbar-item" href="#games">
+                    Game Development
+                  </a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -82,34 +98,35 @@
         <div class="hero-body">
             <h1 class="title is-1 is-family-secondary has-text-weight-normal">What do you fancy making?</h1>
             <div class="buttons is-centered">
-                <button class="button is-medium is-link is-outlined is-inline-flex is-align-items-center">
+                <a href="#web" class="button is-medium is-link is-outlined is-inline-flex is-align-items-center">
                     <span class="icon">
                         <i class="fa-solid fa-wifi"></i>
                     </span>
                     <span>Web &amp; Apps</span>
-                </button>
-                <button class="button is-medium is-primary is-outlined is-inline-flex is-align-items-center">
+                </a>
+                <a href="#software"  class="button is-medium is-primary is-outlined is-inline-flex is-align-items-center">
                     <span class="icon">
                         <i class="fa-brands fa-github"></i>
                     </span>
                     <span>Software</span>
-                </button>
-                <button class="button is-medium is-warning is-outlined is-inline-flex is-align-items-center">
+                </a>
+                <a href="#media" class="button is-medium is-warning is-outlined is-inline-flex is-align-items-center">
                     <span class="icon">
                         <i class="fa-solid fa-camera-retro"></i>
                     </span>
                     <span>Media</span>             
-                </button>
-                <button class="button is-medium is-white is-outlined is-inline-flex is-align-items-center">
+                </a>
+                <a href="#games" class="button is-medium is-white is-outlined is-inline-flex is-align-items-center">
                     <span class="icon">
                         <i class="fa-brands fa-unity"></i>
                     </span>
                     <span>Games</span>
-                </button>
+                </a>
             </div>
         </div>
     </section>
 
+    <a id="about"></a>
     <section id="about" class="section has-text-centered">
         <div class="columns mt-1">
             <div class="column is-one-third m-auto">
@@ -122,7 +139,7 @@
 
     <hr class="mx-auto" style="width:65%;"/>
 
-
+    <a id="contact"></a>
     <section id="contact" class="section has-text-centered my-6">
         <div class="columns">
             <div class="column is-half m-auto">
@@ -138,7 +155,7 @@
                                 <img class="is-rounded" src="./img/1678705554792.jpg" alt="LinkedIn Profile Picture">
                             </figure>
                             <p class="subtitle has-text-grey my-4">Full Stack Engineer | CTO | Film-maker</p>
-                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-info is-small">
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-info">
                                 <span class="icon">
                                     <i class="fab fa-linkedin"></i>
                                 </span>
@@ -151,54 +168,40 @@
         </div>
     </section>
 
+    <a id="skills"></a>
     <hr class="mx-auto" style="width:65%;"/>
 
     <section id="skills" class="section m-auto">
         <div class="columns">
             <div class="column is-two-thirds m-auto">
+                <a id="web"></a>
                 <div class="has-text-centered mb-6" style="height:100px;">
                     <h2 class="title is-1"><code class="has-text-link"># My Skills</code></h2>
                 </div>
                 <div class="columns is-desktop my-6">
                     <div class="column is-half">
-                        <h3 class="subtitle has-text-warning"><i class="fa-solid fa-camera-retro mr-2"></i> Digital Media Production</h3>
+                        <p>iBe Loyalty Photos</p>
+                    </div>
+                    <div class="column is-half">
+                        <h3 class="subtitle has-text-link"><i class="fa-solid fa-wifi mr-2"></i> Websites &amp; Applications</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p class="has-text-right mt-4">
-                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-warning is-small">
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-link">
                                 <span class="icon">
                                     <i class="fab fa-linkedin"></i>
                                 </span>
-                                <span>Discuss Digital Media</span>
+                                <span>Waffle About Websites</span>
                             </a>
                         </p>
                     </div>
-                    <div class="column is-half">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/IV67_3-MwV0?si=vD9LkpBxyyEa9i27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="columns is-desktop my-6">
-                    <div class="column is-half">
-                        <iframe src="https://store.steampowered.com/widget/855620/" frameborder="0" width="100%" height="190"></iframe>
-                    </div>
-                    <div class="column is-half">
-                        <h3 class="subtitle"><i class="fa-brands fa-unity mr-2"></i> Game Development</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="has-text-right mt-4">
-                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-light is-small">
-                                <span class="icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </span>
-                                <span>Gab About Games</span>
-                            </a>
-                        </p>
-                    </div>
+                    <a id="software"></a>
                 </div>
                 <div class="columns is-desktop my-6">
                     <div class="column is-half">
                         <h3 class="subtitle has-text-primary"><i class="fa-brands fa-github mr-2"></i> Software Engineering</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p class="has-text-right mt-4">
-                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-primary is-small">
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-primary">
                                 <span class="icon">
                                     <i class="fab fa-linkedin"></i>
                                 </span>
@@ -209,26 +212,59 @@
                     <div class="column is-half">
                         <script src="https://gist.github.com/hex333ham/9fb4167e2150276145a2804580062c78.js"></script>
                     </div>
+                    <a id="media"></a>
                 </div>
                 <div class="columns is-desktop my-6">
                     <div class="column is-half">
-                        <p>iBe Loyalty Photos</p>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/IV67_3-MwV0?si=vD9LkpBxyyEa9i27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="column is-half">
-                        <h3 class="subtitle has-text-link"><i class="fa-solid fa-wifi mr-2"></i> Websites &amp; Applications</h3>
+                        <h3 class="subtitle has-text-warning"><i class="fa-solid fa-camera-retro mr-2"></i> Media Production</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p class="has-text-right mt-4">
-                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-link is-small">
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-warning">
                                 <span class="icon">
                                     <i class="fab fa-linkedin"></i>
                                 </span>
-                                <span>Waffle About Websites</span>
+                                <span>Discuss Digital Media</span>
                             </a>
                         </p>
+                    </div>
+                    <a id="games"></a>
+                </div>
+                <div class="columns is-desktop my-6">
+                    <div class="column is-half">
+                        <h3 class="subtitle"><i class="fa-brands fa-unity mr-2"></i> Game Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="has-text-right mt-4">
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-light">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Gab About Games</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="column is-half">
+                        <iframe src="https://store.steampowered.com/widget/855620/" frameborder="0" width="100%" height="190"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <footer class="footer has-background-black has-text-white">
+        <div class="content has-text-centered">
+            <p class="my-6">
+                <a href="#top" class="button is-normal is-white is-outlined">
+                    <span class="icon">
+                        <i class="fa-solid fa-up-long"></i>
+                    </span>
+                    <span>Back To Top</span>
+                </a>
+            </p>
+            <p>&copy; 2025 Connor Graham. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
