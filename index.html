@@ -59,8 +59,8 @@
         });
     </script>
 </head>
-<body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top has-background-primary-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">&lt;cg/&gt;</a>
             <a role="button" class="navbar-burger is-primary" data-target="navMenu" aria-label="menu" aria-expanded="false">
@@ -80,40 +80,40 @@
 
     <section class="section hero is-black has-text-centered">
         <div class="hero-body">
-            <h1 class="title is-1 is-family-secondary has-text-weight-normal">What do you want to make?</h1>
+            <h1 class="title is-1 is-family-secondary has-text-weight-normal">What do you fancy making?</h1>
             <div class="buttons is-centered">
-                <button class="button is-warning is-outlined is-inline-flex is-align-items-center">
+                <button class="button is-medium is-link is-outlined is-inline-flex is-align-items-center">
                     <span class="icon">
-                        <i class="fa-solid fa-camera-retro"></i>
+                        <i class="fa-solid fa-wifi"></i>
                     </span>
-                    <span>Digital Media</span>             
+                    <span>Web &amp; Apps</span>
                 </button>
-                <button class="button is-white is-outlined is-inline-flex is-align-items-center">
-                    <span class="icon">
-                        <i class="fa-brands fa-steam"></i>
-                    </span>
-                    <span>Games</span>
-                </button>
-                <button class="button is-primary is-outlined is-inline-flex is-align-items-center">
+                <button class="button is-medium is-primary is-outlined is-inline-flex is-align-items-center">
                     <span class="icon">
                         <i class="fa-brands fa-github"></i>
                     </span>
                     <span>Software</span>
                 </button>
-                <button class="button is-link is-outlined is-inline-flex is-align-items-center">
+                <button class="button is-medium is-warning is-outlined is-inline-flex is-align-items-center">
                     <span class="icon">
-                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-camera-retro"></i>
                     </span>
-                    <span>Web</span>
+                    <span>Media</span>             
+                </button>
+                <button class="button is-medium is-white is-outlined is-inline-flex is-align-items-center">
+                    <span class="icon">
+                        <i class="fa-brands fa-unity"></i>
+                    </span>
+                    <span>Games</span>
                 </button>
             </div>
         </div>
     </section>
 
     <section id="about" class="section has-text-centered">
-        <div class="columns">
+        <div class="columns mt-1">
             <div class="column is-one-third m-auto">
-                <h2 class="title is-1"><code class="has-text-link"># About</code></h2>
+                <h2 class="title is-1"><code class="has-text-link"># About Me</code></h2>
                 <h3 class="title is-2"><code class="has-text-success">&gt; A quote or something</code></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel urna auctor, sagittis eros nec, dapibus turpis.</p>
             </div>
@@ -125,20 +125,20 @@
 
     <section id="contact" class="section has-text-centered my-6">
         <div class="columns">
-            <div class="column is-one-third m-auto">
-                <h2 class="title is-1 mb-6"><code class="has-text-link"># Contact</code></h2>
-                <div class="columns mt-5 is-vcentered">
+            <div class="column is-half m-auto">
+                <h2 class="title is-1 mb-6"><code class="has-text-link"># Get In Touch</code></h2>
+                <div class="columns mt-5 is-vcentered is-size-5">
                     <div class="column has-text-left">
-                        <p class="mb-4">Connect with me on LinkedIn to start working on your project!</p>
+                        <p class="mb-4">Connect with me on LinkedIn to start discusing on your next tech or film project!</p>
                         <p class="mb-4">I'm available for calls:<br/>Monday - Friday, 1pm - 5pm (UK)</p>
                     </div>
                     <div class="column is-half">
                         <div class="box has-text-centered">
-                            <figure class="image is-128x128 is-inline-block">
+                            <figure class="image is-square is-inline-block"  style="max-width:200px;height:200px;">
                                 <img class="is-rounded" src="./img/1678705554792.jpg" alt="LinkedIn Profile Picture">
                             </figure>
-                            <p class="subtitle is-7 has-text-grey my-3">Taking a break | Full Stack Engineer | CTO | Hobbyist Film-maker</p>
-                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-info is-outlined is-small">
+                            <p class="subtitle has-text-grey my-4">Full Stack Engineer | CTO | Film-maker</p>
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-info is-small">
                                 <span class="icon">
                                     <i class="fab fa-linkedin"></i>
                                 </span>
@@ -157,42 +157,74 @@
         <div class="columns">
             <div class="column is-two-thirds m-auto">
                 <div class="has-text-centered mb-6" style="height:100px;">
-                    <h2 class="title is-1"><code class="has-text-link"># Skills</code></h2>
+                    <h2 class="title is-1"><code class="has-text-link"># My Skills</code></h2>
                 </div>
-                <div class="columns is-desktop">
+                <div class="columns is-desktop my-6">
                     <div class="column is-half">
-                        <h3 class="subtitle">Digital Media</h3>
+                        <h3 class="subtitle has-text-warning"><i class="fa-solid fa-camera-retro mr-2"></i> Digital Media Production</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="has-text-right mt-4">
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-warning is-small">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Discuss Digital Media</span>
+                            </a>
+                        </p>
                     </div>
                     <div class="column is-half">
                         <iframe width="100%" height="315" src="https://www.youtube.com/embed/IV67_3-MwV0?si=vD9LkpBxyyEa9i27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="columns is-desktop">
+                <div class="columns is-desktop my-6">
                     <div class="column is-half">
                         <iframe src="https://store.steampowered.com/widget/855620/" frameborder="0" width="100%" height="190"></iframe>
                     </div>
                     <div class="column is-half">
-                        <h3 class="subtitle">Games</h3>
+                        <h3 class="subtitle"><i class="fa-brands fa-unity mr-2"></i> Game Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="has-text-right mt-4">
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-light is-small">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Gab About Games</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="columns is-desktop">
+                <div class="columns is-desktop my-6">
                     <div class="column is-half">
-                        <h3 class="subtitle">Software</h3>
+                        <h3 class="subtitle has-text-primary"><i class="fa-brands fa-github mr-2"></i> Software Engineering</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="has-text-right mt-4">
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-primary is-small">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Chat About Code</span>
+                            </a>
+                        </p>
                     </div>
                     <div class="column is-half">
                         <script src="https://gist.github.com/hex333ham/9fb4167e2150276145a2804580062c78.js"></script>
                     </div>
                 </div>
-                <div class="columns is-desktop">
+                <div class="columns is-desktop my-6">
                     <div class="column is-half">
                         <p>iBe Loyalty Photos</p>
                     </div>
                     <div class="column is-half">
-                        <h3 class="subtitle">Web</h3>
+                        <h3 class="subtitle has-text-link"><i class="fa-solid fa-wifi mr-2"></i> Websites &amp; Applications</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="has-text-right mt-4">
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-link is-small">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Waffle About Websites</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
