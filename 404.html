@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Engineer, CTO & Film-maker. Explore my portfolio and get in touch for your next project.">
+    <meta property="og:title" content="Full Stack Engineer, CTO & Film-maker">
+    <meta property="og:description" content="Explore my portfolio and get in touch for your next project.">
+    <meta property="og:image" content="./img/meta.jpg">
+    <title>Full Stack Engineer, CTO & Film-maker | &lt;cg/&gt;</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/vision_font.css">
+    <style>
+        @import "./css/bulma.min.css";
+        :root {
+            --bulma-primary-h: 26deg;
+            --bulma-primary-s: 14%;
+            --bulma-primary-l: 55%;
+            --bulma-link-h: 244deg;
+            --bulma-link-l: 68%;
+            --bulma-success-h: 113deg;
+            --bulma-success-s: 100%;
+            --bulma-success-l: 32%;
+            --bulma-warning-l: 50%;
+            --bulma-danger-l: 66%;
+            --bulma-scheme-h: 32;
+            --bulma-scheme-s: 25%;
+            --bulma-family-primary: Arial, Helvetica, sans-serif;
+            --bulma-family-secondary: visionregular, Arial, Helvetica, sans-serif;
+            --bulma-family-code: "Fira Code", "JetBrains Mono", "Cascadia Code", "IBM Plex Mono", "Source Code Pro", "SF Mono", "Ubuntu Mono", Inconsolata, Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
+        }
+    </style>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
+</head>
+<body class="has-navbar-fixed-top">
+    <a id="top"></a>
+    <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main dropdown navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/#top">&lt;cg/&gt;</a>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>              
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <a class="navbar-item" href="/#about">About Me</a>
+            <a class="navbar-item" href="/#contact">Contact</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/#skills">Skills</a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="/#web">
+                        Web &amp; Apps
+                    </a>
+                    <a class="navbar-item" href="/#software">
+                        Software Engineering
+                    </a>
+                    <a class="navbar-item" href="/#media">
+                        Media Production
+                    </a>
+                    <a class="navbar-item" href="/#games">
+                        Game Development
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section hero is-black has-text-centered">
+        <div class="hero-body">
+            <h1 class="title is-1 is-family-secondary has-text-weight-normal">404</h1>
+            <h2 class="title is-3 is-family-secondary has-text-weight-normal">Page Not Found</h2>
+        </div>
+    </section>
+    
+    <footer class="footer has-background-black has-text-white">
+        <div class="content has-text-centered">
+            <p>To save me a lot of time, this website has been hand-crafted using the wonderful <a href="https://bulma.io/" target="_blank">Bulma CSS Class Framework</a>.</p>
+            <p>&copy; 2025 Connor Graham. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
