@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Engineer, CTO & Film-maker. Explore my portfolio and get in touch for your next project.">
+    <meta property="og:title" content="Full Stack Engineer, CTO & Film-maker">
+    <meta property="og:description" content="Explore my portfolio and get in touch for your next project.">
+    <meta property="og:image" content="./img/meta.jpg">
+    <title>Full Stack Engineer, CTO & Film-maker | &lt;cg/&gt;</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/vision_font.css">
+    <style>
+        @import "./css/bulma.min.css";
+        :root {
+            --bulma-primary-h: 26deg;
+            --bulma-primary-s: 14%;
+            --bulma-primary-l: 55%;
+            --bulma-link-h: 244deg;
+            --bulma-link-l: 68%;
+            --bulma-success-h: 113deg;
+            --bulma-success-s: 100%;
+            --bulma-success-l: 32%;
+            --bulma-warning-l: 50%;
+            --bulma-danger-l: 66%;
+            --bulma-scheme-h: 32;
+            --bulma-scheme-s: 25%;
+            --bulma-family-primary: Arial, Helvetica, sans-serif;
+            --bulma-family-secondary: visionregular, Arial, Helvetica, sans-serif;
+            --bulma-family-code: "Fira Code", "JetBrains Mono", "Cascadia Code", "IBM Plex Mono", "Source Code Pro", "SF Mono", "Ubuntu Mono", Inconsolata, Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
+        }
+    </style>
+    <link href="./fas/css/fontawesome.css" rel="stylesheet" />
+    <link href="./fas/css/brands.css" rel="stylesheet" />
+    <link href="./fas/css/solid.css" rel="stylesheet" />
+    <style>
+        /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+            .gist {
+                filter: invert(1) hue-rotate(180deg);
+            }
+        }
+        .gist {
+            max-width: 510px;
+            max-height: 510px;
+            margin: auto;
+        }
+        .blob-code-content {
+            max-width: 510px;
+            max-height: 480px;
+            overflow: auto;
+        }
+    </style>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
+</head>
+<body class="has-navbar-fixed-top">
+    <a id="top"></a>
+    <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main dropdown navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#top">&lt;cg/&gt;</a>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>              
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <a class="navbar-item" href="#about">About Me</a>
+            <a class="navbar-item" href="#contact">Contact</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="#skills">Skills</a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="#web">
+                        Web &amp; Apps
+                    </a>
+                    <a class="navbar-item" href="#software">
+                        Software Engineering
+                    </a>
+                    <a class="navbar-item" href="#media">
+                        Media Production
+                    </a>
+                    <a class="navbar-item" href="#games">
+                        Game Development
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section hero is-black has-text-centered">
+        <div class="hero-body">
+            <h1 class="title is-1 is-family-secondary has-text-weight-normal">What do you fancy making?</h1>
+            <div class="buttons is-centered">
+                <a href="#web" class="button is-medium is-link is-outlined is-inline-flex is-align-items-center">
+                    <span class="icon">
+                        <i class="fa-solid fa-wifi"></i>
+                    </span>
+                    <span>Web &amp; Apps</span>
+                </a>
+                <a href="#software"  class="button is-medium is-primary is-outlined is-inline-flex is-align-items-center">
+                    <span class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </span>
+                    <span>Software</span>
+                </a>
+                <a href="#media" class="button is-medium is-warning is-outlined is-inline-flex is-align-items-center">
+                    <span class="icon">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </span>
+                    <span>Media</span>             
+                </a>
+                <a href="#games" class="button is-medium is-white is-outlined is-inline-flex is-align-items-center">
+                    <span class="icon">
+                        <i class="fa-brands fa-unity"></i>
+                    </span>
+                    <span>Games</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a id="about"></a>
+    <section id="about" class="section has-text-centered">
+        <div class="columns mt-1">
+            <div class="column">
+                <h2 class="title is-1"><code class="has-text-link"># About Me</code></h2>
+                <h3 class="title is-2  is-size-5-mobile is-size-4-tablet is-size-3-desktop is-size-2-widescreen"><code class="has-text-success">&gt; Code, websites, and the odd bit of magic <i class="fa-solid fa-wand-magic-sparkles"></i></code></h3>
+            </div>
+        </div>
+        <div class="columns is-desktop mt-1">
+            <div class="column is-three-quarters-desktop is-half-widescreen is-one-third-fullhd m-auto">
+                <p>Hello, I’m Connor, a freelancer, film-maker, CTO and Software Engineer from Sheffield, Yorkshire (UK). I build websites, web apps, games, and software projects. I’ve worked in the traffic and hospitality industries, but I also have a background in digital media, particularly live event multi-camera productions and documentaries.</p>
+                <br/>
+                <p>I’m used to working independently or as part of a team, picking up projects at any stage and seeing them through. I’ve also pitched projects to Amazon, Microsoft, and other big names at GDC London, which was quite an experience! A lot of my work is under strict NDAs, which means my clients trust me with their sensitive and high-profile projects - and I take that trust seriously.</p>
+                <br/>
+                <p>If you need something built, improved, or just finished off, <a href="#contact">let’s have a chat!</a></p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="mx-auto" style="width:65%;"/>
+
+    <a id="contact"></a>
+    <section id="contact" class="section has-text-centered my-6">
+        <div class="columns">
+            <div class="column is-half-widescreen m-auto">
+                <h2 class="title is-1 mb-6"><code class="has-text-link"># Get In Touch</code></h2>
+                <div class="columns mt-5 is-vcentered is-size-5">
+                    <div class="column has-text-left">
+                        <p class="mb-4">Connect with me on LinkedIn to start discussing your next tech or film project!</p>
+                        <p class="mb-4">I'm available for calls:<br/>Monday - Friday, 1pm - 5pm (UK)</p>
+                    </div>
+                    <div class="column is-half-widescreen">
+                        <div class="box has-text-centered">
+                            <figure class="image is-square is-inline-block"  style="width:100%;max-width:200px;max-height:200px;">
+                                <img class="is-rounded" src="./img/1678705554792.jpg" alt="LinkedIn Profile Picture">
+                            </figure>
+                            <p class="subtitle has-text-grey my-4">Full Stack Engineer | CTO | Film-maker</p>
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-info">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Connect</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a id="skills"></a>
+    <hr class="mx-auto" style="width:65%;"/>
+
+    <section id="skills" class="section m-auto content">
+        <div class="columns">
+            <div class="column is-full-desktop is-full-widescreen is-two-thirds-fullhd m-auto">
+                <a id="web"></a>
+                <div class="has-text-centered mb-6" style="height:100px;">
+                    <h2 class="title is-1"><code class="has-text-link"># My Skills</code></h2>
+                </div>
+                <div class="columns is-desktop my-6">
+                    <div class="column is-half-widescreen">
+                        <figure class="image is-16by9">
+                            <img src="./img/ibe-web-demo.jpg" alt="iBe Web Demo Collage">
+                        </figure>
+                    </div>
+                    <div class="column is-half-widescreen">
+                        <h3 class="subtitle has-text-link"><i class="fa-solid fa-wifi mr-2"></i> Websites &amp; Applications</h3>
+                        <p>Need a website? I can build it. Whether it’s a simple page, a full web app, or something in between, I’ll make sure it looks good and does what you need.</p>
+                        <ul>
+                            <li><strong>Custom websites</strong> – No generic templates, just a site that fits.</li>
+                            <li><strong>Web apps</strong> – Interactive and built to do the job right.</li>
+                            <li><strong>Portfolios & landing pages</strong> – Clean, simple, and to the point.</li>
+                            <li><strong>Shops & booking</strong> – If you need to sell stuff or take bookings, I’ve got you.</li>
+                        </ul>
+                        <p>Got a site that needs fixing or upgrading? I can sort that too.</p>
+                        <p class="has-text-right-desktop has-text-centered-touch mt-4">
+                            <a href="https://asteroiddeathmatch.eageramoeba.co.uk/" target="_blank" class="button is-normal is-outlined is-link m-1">
+                                <span class="icon">
+                                    <i class="fa-solid fa-location-arrow"></i>
+                                </span>
+                                <span>Visit Asteroid Deathmatch</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-link m-1">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Waffle About Websites</span>
+                            </a>
+                        </p>
+                    </div>
+                    <a id="software"></a>
+                </div>
+                <div class="columns is-desktop my-6">
+                    <div class="column is-half-widescreen">
+                        <h3 class="subtitle has-text-primary"><i class="fa-brands fa-github mr-2"></i> Software Engineering</h3>
+                        <p>I build software, whether it’s a full project or just a piece of the puzzle. From desktop and web apps to games and backend systems, I can jump in wherever needed.</p>
+                        <h3>What I work with:</h3>
+                        <ul>
+                            <li><strong>Backend & Databases</strong> - SQL, GraphQL</li>
+                            <li><strong>C# &amp; .NET</strong> - .NET (MAUI, ASP.NET MVC), Unity</li>
+                            <li><strong>Frontend & Styling</strong> - HTML, CSS, Bootstrap, Bulma</li>
+                            <li><strong>Game Development</strong> - Unity (C#), Godot (GDScript)</li>
+                            <li><strong>Planning & Documentation</strong> - UML, Markdown</li>
+                            <li><strong>Scripting & Automation</strong> - Python, Bash</li>
+                            <li><strong>Web Development</strong> - PHP (Symfony, Legacy & Modern), JavaScript (Vue, React, Node/NPM), TypeScript</li>
+                        </ul>
+                        <p>The above is not a comprehensive list, I've worked with too many technologies to count and can pick them up relatively quickly. If you're not sure if I can help, ask me!</p>
+                        <p class="has-text-right-desktop has-text-centered-touch mt-4">
+                            <a href="https://github.com/hex333ham/hex333ham.github.io" target="_blank" class="button is-normal is-outlined is-primary m-1">
+                                <span class="icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </span>
+                                <span>Browse This Websites Code</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-primary m-1">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Chat About Code</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="column is-half-widescreen">
+                        <figure class="image is-5by3">
+                            <script src="https://gist.github.com/hex333ham/9fb4167e2150276145a2804580062c78.js"></script>
+                        </figure>
+                    </div>
+                    <a id="media"></a>
+                </div>
+                <div class="columns is-desktop my-6">
+                    <div class="column is-half-widescreen">
+                        <figure class="image is-16by9">
+                            <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/IV67_3-MwV0?si=vD9LkpBxyyEa9i27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </figure>
+                    </div>
+                    <div class="column is-half-widescreen">
+                        <h3 class="subtitle has-text-warning"><i class="fa-solid fa-camera-retro mr-2"></i> Media Production</h3>
+                        <p>I've worked on a mix of personal and professional projects, from running secret YouTube channels to creating films for local businesses like <a href="https://eageramoeba.co.uk/portfolio-item/our-cow-molly">Our Cow Molly</a>, <a href="https://eageramoeba.co.uk/portfolio-collection/steel-city-spartans">Steel City Spartans</a>, <a href="https://eageramoeba.co.uk/portfolio-collection/secrets-of-the-boudoir-burlesque-1">Secrets of the Boudoir Burlesque</a>, and <a href="https://eageramoeba.co.uk/portfolio-collection/music-in-the-gardens">Music in the Gardens</a>. Originally under the trading name <a href="https://eageramoeba.co.uk/portfolio">Eager Amobeba&trade;</a></p>
+                        <p>My experience is largely volunteer-based, but I’ve handled filming, editing, marketing, and production. Most recently, I filmed and edited a feature-length horror play written by Scott and Max, <a href="">The King in Yellow</a>. This was a multi-camera shoot, the best angle being an uncomfortable GoPro shot from the back of the stage!</p>
+                        <p class="has-text-right-desktop has-text-centered-touch mt-4">
+                            <a href="https://youtu.be/ItJ7mvE-lxs?si=yQtLGPIsTnml9vwO" target="_blank" class="button is-normal is-warning is-outlined m-1">
+                                <span class="icon">
+                                    <i class="fa-solid fa-blender-phone"></i>
+                                </span>
+                                <span>A Silly Video I Made With My Dad</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-warning m-1">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Discuss Digital Media</span>
+                            </a>
+                        </p>
+                    </div>
+                    <a id="games"></a>
+                </div>
+                <div class="columns is-desktop my-6">
+                    <div class="column is-half-desktop">
+                        <h3 class="subtitle"><i class="fa-brands fa-unity mr-2"></i> Game Development</h3>
+                        <p>Under my brand <strong>Eager Amoeba</strong>, I’ve developed a range of Unity assets, including <a target="_blank" href="https://assetstore.unity.com/packages/tools/gui/easy-screen-align-75607">Easy Screen Align</a>, <a target="_blank" href="https://assetstore.unity.com/packages/tools/integration/auto-quality-hardware-assessment-tool-aqhat-74134">AQHAT</a>, and <a target="_blank" href="https://assetstore.unity.com/packages/tools/physics/dynamic-laser-energy-beam-suite-beamtime-83610">Beamtime</a>, all highly rated by users. I also released a Steam game, <a href="https://asteroiddeathmatch.eageramoeba.co.uk/" target="_blank">Asteroid Deathmatch</a>, which has been featured in a <a href="https://www.youtube.com/watch?v=x3J9yqXb1fo" target="_blank">strangers YouTube review</a>!</p>
+                        <p class="has-text-right-desktop has-text-centered-touch mt-4">
+                            <a href="https://assetstore.unity.com/publishers/24166" target="_blank" class="button is-normal is-outlined is-light m-1">
+                                <span class="icon">
+                                    <i class="fa-brands fa-unity"></i>
+                                </span>
+                                <span>Eager Amoeba&trade;</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hex333ham/" target="_blank" class="button is-normal is-light m-1">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span>Gab About Games</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="column is-half-desktop">
+                        <iframe src="https://store.steampowered.com/widget/855620/" frameborder="0" width="100%" height="190"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer has-background-black has-text-white">
+        <div class="content has-text-centered">
+            <p class="my-6">
+                <a href="#top" class="button is-normal is-white is-outlined">
+                    <span class="icon">
+                        <i class="fa-solid fa-up-long"></i>
+                    </span>
+                    <span>Back To Top</span>
+                </a>
+            </p>
+            <p>To save me a lot of time, this website has been hand-crafted using the wonderful <a href="https://bulma.io/" target="_blank">Bulma CSS Class Framework</a>.</p>
+            <p>&copy; 2025 Connor Graham. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
